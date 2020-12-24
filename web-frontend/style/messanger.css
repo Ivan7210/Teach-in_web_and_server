@@ -1,0 +1,559 @@
+.body__wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.messanger{
+    flex: 1 1 auto;
+    display: flex;
+    width: 100vw;
+}
+
+.headerLogo{
+    display: flex;
+    height: 100%;
+}
+
+.messangerHeader{
+    height: 70px;
+    width: 100%;
+    background-color: #602df9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.messangerHeader > img{
+    height: 80%;
+}
+
+.messanger__headerKid__image{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.8em;
+    cursor: pointer;
+    background-size: contain !important;
+    border: 2px solid #fff;
+}
+
+.profileMenu{
+    width: 150px;
+    height: 200px;
+    background-color: #8d68ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    border-radius: 0 0 10px 10px;
+    z-index: 30;
+    transition: all 0.2s ease;
+}
+
+.profileMenu > a{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.profileMenu > a:hover{
+    background-color: #a88cfa;;
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+.listItem.online::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 209, 0);
+}
+
+.listItem.offline::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    background-color: rgb(179, 7, 7);
+}
+
+.messanger__userList{
+    height: 100%;
+    min-width:400px;
+    background-color: #EDEBEF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.messanger_userList__listWrapper{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.messanger_userList__list{
+    flex: 1 1 auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.messanger_userList__list > ul{
+    flex: 1 1 auto;
+    position: absolute;
+    overflow-y: scroll;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.messanger__massageWindow__messanges > ul{
+    width: 95%;
+    max-height: 100%;
+}
+
+.messanger__massageWindow__messanges > ul > li.self{
+    justify-content: flex-start;
+}
+
+.messanger__massageWindow__messanges > ul > li.self > div{
+    background-color: #9775ff !important;
+}
+
+.messanger__massageWindow__messanges > ul > li.other{
+    justify-content: flex-end;
+}
+
+.messanger__massageWindow__messanges > ul >li{
+    width: 100%;
+    display: flex;
+    
+}
+
+.messanger__massageWindow__messanges > ul >li > div{
+    max-width: 60%;
+    min-width: 120px;
+    word-wrap: wrapp;
+    color: rgb(255, 255, 255);
+    background-color:  #602df9;
+    padding: 25px 0;
+    border-radius: 10px;
+    margin: 15px 0;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+.messanger__massageWindow__messanges > ul >li > div span{
+    padding-bottom: 18px;
+    font-weight: bold;
+}
+
+.messanger__massageWindow__messanges > ul >li >div>*{
+    margin-left: 10px;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.buttonIcon{
+    height: 70%;
+}
+
+/* .messanger_userList__list > ul > div{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 50%, rgba(0,0,0,0.05) 100%);
+    color: #000;
+
+} */
+
+#headerUserName{
+    font-size: 1.1em;
+}
+
+.messanger__messageWindow{
+    height: 100%;
+    flex: 1 1 auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.messanger__messageWindow.noneChat::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/backgroundChat.svg) #6a3bf5;
+    background-size: 100px;
+    z-index: 1;
+}
+
+.messanger__massageWindow__window{
+    background-color: #F4F4F4;
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.messanger__massageWindow__messanges{
+    width: 90%;
+    height: 85%;
+    border: 2px solid rgb(172, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+}
+
+.messanger__massageWindow__inputsBlock{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+}
+
+.messanger__massageWindow__inputsBlock > input{
+    width: 70%;
+    height: 60px;
+    border: 2px solid rgb(172, 172, 172);
+    margin-right: 30px;
+}
+
+.messanger_userList__searchUser{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid rgb(211, 211, 211);
+}
+
+.messanger_userList__searchUser > input{
+    margin-right: 20px;
+    height: 30px;
+    width: 70%;
+}
+
+.messangerListRefresh{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #602df9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.messangerListRefresh:hover{
+    background-color: #4d1cdf;
+}
+
+.messangerListRefresh img{
+    width: 50%;
+}
+
+.messangerListRefresh.active img{
+    animation: 3s linear anim;
+}
+
+@keyframes anim{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.currentListItem{
+    background:  #5622f5 !important;
+    color: #fff !important;
+}
+
+.messanger_userList__searchUser > button{
+    width: 80px;
+    height: 30px;
+}
+
+.messanger__massageWindow__buttonsBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.kidSend{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.kidSend button{
+    width: 40px;
+    height: 40%;
+    border-radius: 3px !important;
+}
+
+.messanger__massageWindow__buttonsBlock > button{
+    width: 60px;
+    height: 100%;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+
+.messanger__headerKid{
+    display: flex;
+    align-items: center;
+}
+
+.messanger__headerKid > *{
+    margin-right: 10px;
+}
+
+.messangerSearchUserList{
+    width: 70%;
+    max-height: 70%;
+    padding: 20px 0;
+    background: rgb(211, 211, 211);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+.messangerSearchUserList > ul{
+    width: 100%;
+}
+
+.messangerHeader img{
+    margin-left: 10px;
+}
+
+.listItem{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 50%, rgba(0,0,0,0.05) 100%);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.listItem:hover{
+    background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 50%, rgba(0,0,0,0.1) 100%);
+
+}
+
+.listItem > *{
+    margin: 0 20px;
+}
+
+.messangerSearchUserList ul li span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalWindow{
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    transform: scaleY(0);
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.modalWindow.windowActive{
+    transform: scaleY(1);
+}
+
+.modalWindow__myProfile__image input{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.modalWindow > *{
+    width: 95%;
+    height: 97%;
+    border: 2px solid #602df9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalWindow__myProfile__image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background:#602df9;
+    margin: 30px 0;
+    position: relative;
+    cursor: pointer;
+    background-size: contain !important;
+}
+
+.modalWindow__myProfile__image:hover{
+    background: #5222e2;
+
+}
+
+.modalWindow__myProfile__image:hover::after{
+    content: "PHOTO";
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.modalWindow__myProfile__data{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalWindow__myProfile__data > form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalWindow__myProfile__dataBlock{
+    height: 20%;
+    width: 100%;
+    background-color: #602df9;
+    border-bottom: 1px solid#5222e2;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+
+}
+
+.modalWindow__myProfile__dataBlock >*{
+    margin: 0 20px;
+    width: 100%;
+}
+
+.modalWindow__myProfile__dataBlock:hover{
+    background-color:  #6f40fb;
+}
+
+.modalWindow__myProfile__dataBlock >img{
+    height: 40%;
+    display: none;
+}
+
+.modalWindow__myProfile__dataBlock:hover.modalWindow__myProfile__dataBlock>img{
+    display: block;
+}
+
+.modalWindow__myProfile__dataBlock input{
+    height: 30%;
+    width: 50%;
+    position: relative;
+    z-index: 100;
+}
+
+.modalWindow__myProfile__data button{
+    width: 140px;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.countMes{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(226, 180, 30);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+
+@media screen and (max-width:860px){
+    .messanger{
+        position: relative;
+    }
+
+    .messanger__userList{
+        width: 100%;
+        min-width: 200px;
+        position: relative;
+        z-index: 20;
+    }
+
+    .messanger__messageWindow{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 19;
+    }
+
+    .messanger_userList__searchUser > button{
+        width: 10%;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/messanger.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="shortcut icon" href="../images/teach-inv2.1.ico" type="image/x-icon">
+    <title>Teach-In</title>
+</head>
+<body>
+    <div class="body__wrapper">
+        <header class="messangerHeader">
+            <img src="../images/teach-in v2.6.svg" alt="Teach-In">
+            <div class="messanger__headerKid">
+                <span id="headerUserName"></span>
+                <div class="messanger__headerKid__image"></div>
+                <div class="profileMenu hidden">
+                    <a href="#" id="myProflie">My Profile</a>
+                    <a href="#" id="setting">Settings</a>
+                    <a href="#" id="logOutLink">Log out</a>
+                </div>
+            </div>
+        </header>
+        <div class="modalWindow">
+            <div class="modalWindow__myProfile hidden">
+                <div class="modalWindow__myProfile__image">
+                    <input type="file" onchange="changeUserImage">
+                </div>
+                <div class="modalWindow__myProfile__data">
+                    <form action="">
+                        <div class="modalWindow__myProfile__data__userNameBlock modalWindow__myProfile__dataBlock">
+                            <span></span>
+                            <input type="text" name="name" class="hidden">
+                            <img src="../images/pen.svg" alt="">
+                        </div>
+                        <div class="modalWindow__myProfile__data__userLastNameBlock modalWindow__myProfile__dataBlock">
+                            <span></span>
+                            <input type="text" name="last_name" class="hidden">
+                            <img src="../images/pen.svg" alt="">
+                        </div>
+                        <button type="submit" class="button">Change</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modalWindow__settings hidden"></div>
+        </div>
+        <div class="messanger">
+            <div class="messanger__userList">
+                    
+                <div class="messanger_userList__listWrapper">
+                        
+                    <div class="messanger_userList__searchUser">
+                        <input type="text" placeholder="Найти друга.">
+                        <button class="button" id="findButton">
+                            <img src="../images/loupe.svg" class="buttonIcon" alt="">
+                        </button>
+                    </div>
+                    <div class="messanger_userList__list">
+                        <ul>
+
+                        </ul>
+                        <div class="messangerSearchUserList hidden">
+                            <ul></ul>
+                        </div>
+                        <div class="messangerListRefresh">
+                            <img src="../images/refresh.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="messanger__messageWindow noneChat">
+                <div class="messanger__massageWindow__window">
+                    <div class="messanger__massageWindow__messanges">
+                        <ul>
+
+                        </ul>
+                    </div>
+                    <div class="messanger__massageWindow__inputsBlock">
+                        <input type="text" placeholder="Сообщение" id="messangerInput">
+                        <div class="messanger__massageWindow__buttonsBlock">
+                            <button class="button" id="sendButton">
+                                <img src="../images/send.svg" alt="" class="buttonIcon">
+                            </button>
+                            <div class="kidSend">
+                                <button class="button">
+                                    <img src="../images/folder.svg" alt="" class="buttonIcon">
+                                </button>
+                                <button class="button">
+                                    <img src="../images/microphone.svg" alt="" class="buttonIcon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/messanger.js"></script>
+    <!--<script src="../scripts/index.js" type="text/babel"></script>-->
+</body>
+</html>

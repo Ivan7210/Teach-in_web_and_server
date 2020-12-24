@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach-In</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/loginSlide.css">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="SHORTCUT ICON" href="../images/teach-inv2.1.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="body__wrapper">
+        <div class="loginSlide slide">
+            <div class="loginSlide__loginBox">
+                <div class="loginBox">
+                    
+                        <div class="loginBox__logo">
+                            <img src="../images/teach-in v2.7.svg" alt="">
+                        </div>
+                        <div class="loginBox__loginTools">
+                            <div class="loginTools__buttons">
+                                <button class="button currentButton" type="button">Register</button>
+                                <button class="button" type="button">Log in</button>
+                            </div>
+                            <form id="loginBoxRegistration__form" class="loginBox" data-request="new_token">
+                                <div class="loginTools__inputsBox">
+                                    <div class="loginTools__inputsBox__item">
+                                        <span>E-mail:</span>
+                                        <input type="text" class="loginTools__input" name="email" placeholder="Ваш электронный ящик">
+                                    </div>
+                                    <div class="loginTools__inputsBox__item">
+                                        <span>Фамилия:</span>
+                                        <input type="text" class="loginTools__input" name ="last_name" placeholder="Ваша Фамилия">
+                                    </div>
+                                    <div class="loginTools__inputsBox__item">
+                                        <span>Имя:</span>
+                                        <input type="text" class="loginTools__input" name="name" placeholder="Ваше Имя">
+                                    </div>
+                                    <div class="loginTools__inputsBox__item">
+                                        <span>Пароль:</span>
+                                        <input type="password" class="loginTools__input" name="password" placeholder="Ваш пароль">
+                                    </div>
+                                    <button class="loginTools__button button" type="submit">Let's go</button>
+                                </div>
+                                
+                            </form>
+                            <form id="loginBoxLog__form" class="loginBox hidden" data-request="get_token">
+                                <div class="loginTools__inputsBox">
+                                    <div class="loginTools__inputsBox__item">
+                                        <span>E-mail:</span>
+                                        <input type="text" name ="email" class="loginTools__input" placeholder="Ваш электронный ящик">
+                                    </div>
+                                    <div class="loginTools__inputsBox__item">
+                                        <span>Пароль:</span>
+                                        <input type="password" name="password" class="loginTools__input" placeholder="Ваш пароль">
+                                    </div>
+                                    <button class="loginTools__button button" type="submit">Let's go</button>
+
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="loginSlide__mediaBox">
+                <div class="mediaBox">
+                    <h1>TEACH-IN</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/index.js" type="module"></script>
+    <script src="../scripts/formEffects.js" type="module"></script>
+</body>
+</html>

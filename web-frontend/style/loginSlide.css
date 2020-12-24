@@ -1,0 +1,171 @@
+.loginSlide__loginBox{
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fbfafa;
+}
+
+.loginSlide__mediaBox{
+    height: 100%;
+    width: 60%;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.loginBox{
+    width: 100%;
+}
+
+#loginBox__form{
+
+}
+
+.loginBox__logo{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.loginBox__loginTools{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.loginTools__buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 25px;  
+    padding-top: 20px;  
+    border-top:1px solid rgb(204, 204, 204);
+}
+
+.loginTools__buttons button{
+    width: 45%;
+    height: 40px;
+    color: #fff;
+}
+
+.loginTools__inputsBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.loginTools__input{
+    width: 100%;
+    height: 40px;
+    background-color: #ececec;
+    color: rgb(47, 47, 47);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    margin-bottom: 25px;
+    margin-top:5px;
+    text-indent: 10px;
+    transition: all 0.2s ease;
+}
+
+.loginTools__input:focus{
+    /* box-shadow: 0px 0px 10px 5px rgba(83, 23, 248, 0.3); */
+    border: 2px solid rgba(83, 23, 248, 0.5);
+}
+
+.mediaBox{
+    /* height: 100%;
+    background: url(../images/video.webm);
+    position: relative;
+    display: flex;
+    justify-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 0, 15);
+    height: 100%;
+}
+
+.mediaBox > h1{
+    font-size: 10em;
+    position: relative;
+    letter-spacing: 8px;
+    color: rgb(27, 0, 82);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    line-height: 0.7em;
+    outline: none;
+    animation: mediaAnimate 5s linear infinite;
+    font-size: bold;
+    word-wrap: break-word;
+    white-space: nowrap;
+    
+}
+
+@keyframes mediaAnimate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: rgb(27, 0, 82);
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #602df9,
+                    0 0 20px #602df9,
+                    0 0 40px #602df9,
+                    0 0 80px #602df9,
+                    0 0 160px #602df9;
+    }
+}
+
+/* .mediaBox video{
+    
+    min-height: 100%;
+    height: 100%;
+    top: 0%;
+    left: -20%;
+    
+} */
+
+.loginTools__inputsBox__item{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #602df9;
+}
+.loginTools__button{
+    height: 40px;
+    color: #fff;
+    width: 70%;
+}
+
+@media screen and (max-width:1170px){
+    .mediaBox > h1{
+        font-size: 7em;
+    }
+}
+
+@media screen and (max-width:950px){
+    .mediaBox > h1{
+        font-size: 4.2em;
+    }
+}
+
+@media screen and (max-width:760px){
+    .loginSlide__mediaBox{
+        display: none;
+    }
+
+    .loginSlide__loginBox{
+        width: 100%;
+    }
+}
